@@ -24,14 +24,14 @@ const ProductDetailsScreen = () => {
     addItem(product, selectedSize);
     router.push('/cart');
   }
-
+  
   if (!product) {
     return <Text>Product not found</Text>;
   }
 
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ title: product.name}} />
+      <Stack.Screen options={{ title: product.name }} />
       <Image source={{ uri: product.image || defaultPizzaImage}} style={styles.image} />
       <Text>Select size</Text>
       <View  style={styles.sizes}>

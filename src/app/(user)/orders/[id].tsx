@@ -21,7 +21,7 @@ export default function OrderDetailsScreen() {
                 renderItem={({ item }) => <OrderItemListItem item={item} />}
                 contentContainerStyle={{ gap: 10}}
                 ListHeaderComponent={() => <OrderListItem order={order} />}
-                // ListFooterComponent={() => <OrderListItem order={order} />}
+                ListFooterComponent={() => <OrderListItem order={order} />}
             />
         </View>
     )
